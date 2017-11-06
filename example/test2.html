@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="http://localhost:8989" crossorigin="anonymous"></script>
+<script>
+  window.onerror = function (message, url, line, column, error) {
+    console.log(message, url, line, column, error);
+  }
+  foo(); // call function declared in app.js
+</script>
+</body>
+</html>
