@@ -1,7 +1,7 @@
 /**
  * Created by lenovo on 2017/11/6.
  */
-const path = require('src/path');
+const path = require('path');
 const os = require('os');
 
 const arr = [];
@@ -13,9 +13,9 @@ const now = new Date().getTime();
 // }
 
 console.log(arr);
-console.log(path.basename === path.posix.basename); // true
+console.log(path.extname('example/hell1.html')); // true
 
 console.log(os.loadavg())
 
 
-console.log(os.constants.errno);
+// console.log(os.constants.errno);

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pointer-events</title>
+    <style>
+        div {
+            width: 500px;
+            height: 600px;
+            border: 1px solid red;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <button>click</button>
+    <a href="http://www.baidu.com">baidu</a>
+</div>
+
+<script>
+    document.querySelector('div').addEventListener('click', function() {
+      console.log('click');
+    });
+    document.querySelector('div').addEventListener('mouseover', function() {
+      console.log('mouseover');
+    });
+</script>
+</body>
+</html>
