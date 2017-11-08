@@ -49,3 +49,16 @@ module.exports = function() {
 
   return content;
 };
+
+var obj = {
+  host: 'localhost',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding': 'gzip, deflate, br',
+  'accept-language': 'zh-CN,zh;q=0.8',
+  cookie: '_ga=GA1.1.348385410.1510100998; _gid=GA1.1.1482683428.1510100998; Webstorm-a67a084=1f5cbcbd-8265-4723-bea8-79c398c168cf',
+  'if-none-match': 'W/"18-CHxpv/lbgPnGFUdF7OcDkORQyHI"'
+}

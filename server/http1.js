@@ -14,10 +14,18 @@ const app = express();
 //   next();
 // });
 
+function getClientIp(req) {
+  return req.headers['x-forwarded-for'] ||
+    req.connection.remoteAddress ||
+    req.socket.remoteAddress ||
+    req.connection.socket.remoteAddress;
+};
+
 app.get('/', (req, res) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'get,post,put,delete');
-  res.header('content-type', 'text/html');
+  console.log(getClientIp(req));
+  // res.header('Access-Control-Allow-Origin', '*');
+  // res.header('Access-Control-Allow-Methods', 'get,post,put,delete');
+  // res.header('content-type', 'text/html');
   res.send('hello world , i am http1');
 });
 app.post('/', (req, res) => {
